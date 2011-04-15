@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/amw/!svn/ver/7/MeteorWidget/MeteorWidget
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/amw/!svn/ver/8/MeteorWidget/MeteorWidget/default.properties
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/amw/!svn/ver/8/MeteorWidget/MeteorWidget/.classpath
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/amw/!svn/ver/8/MeteorWidget/MeteorWidget/proguard.cfg
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/amw/!svn/ver/8/MeteorWidget/MeteorWidget/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/amw/!svn/ver/11/MeteorWidget/MeteorWidget/AndroidManifest.xml
+END

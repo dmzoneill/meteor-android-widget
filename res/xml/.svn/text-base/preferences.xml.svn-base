@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="Login Information" android:key="meteor_settings_credentials">
+		
+		<EditTextPreference 
+			android:dialogTitle="Phone Number"
+			android:dialogMessage="Please enter your number" 
+			android:dependency="meteor_widget_main_option"
+			android:key="meteor_widget_phone_number" 
+			android:title="Phone number" 
+			android:summary="Your meteor phone number"
+			android:inputType="phone" 
+			android:defaultValue="@string/phone_default" 
+			android:id="@+id/EditText1"
+		/>
+			
+		<EditTextPreference 
+			android:dialogTitle="Meteor pin"
+			android:dialogMessage="Meteor login pin" 
+			android:dependency="meteor_widget_main_option"
+			android:key="meteor_widget_phone_pin" 
+			android:title="Phone pin" 
+			android:summary="Your meteor pin number"
+			android:password="true" 
+			android:inputType="phone" 
+			android:defaultValue="@string/pin_default" 
+			android:id="@+id/EditText2"
+		/>
+			
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Widget options"  android:key="meteor_settings_options">
+	
+		<PreferenceScreen android:title="Widget Theme" android:key="meteor_widget_theme_options">
+		
+			<PreferenceCategory android:title="Widget Theme">
+
+				<ListPreference 
+					android:title="Color"
+					android:summary="Select from the list of colors"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_basecolor"
+					android:defaultValue="orange" 
+					android:entries="@array/colors"
+					android:entryValues="@array/colors_values" 
+					android:id="@+id/List1"
+				/>
+				
+			</PreferenceCategory>
+			
+			<PreferenceCategory android:title="Header options">
+					
+				<ListPreference 
+					android:title="Font"
+					android:summary="Select from the list of installed fonts"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_headerfont"
+					android:defaultValue="normal" 
+					android:entries="@array/fonts"
+					android:entryValues="@array/fonts_values" 
+					android:id="@+id/List2"
+				/>
+				
+				<ListPreference 
+					android:title="Font size"
+					android:summary="Select from the list of sizes"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_headerfontsize"
+					android:defaultValue="18" 
+					android:entries="@array/fontsizes"
+					android:entryValues="@array/fontsizes_values" 
+					android:id="@+id/List3"
+				/>
+					
+				<ListPreference 
+					android:title="Font color"
+					android:summary="Select from the list of colors"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_headerfontcolor"
+					android:defaultValue="white" 
+					android:entries="@array/fontcolors"
+					android:entryValues="@array/fontcolors_values" 
+					android:id="@+id/List4"
+				/>	
+				
+			</PreferenceCategory>
+			
+			<PreferenceCategory android:title="Body options">
+					
+				<ListPreference 
+					android:title="Font"
+					android:summary="Select from the list of installed fonts"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_bodyfont"
+					android:defaultValue="normal" 
+					android:entries="@array/fonts"
+					android:entryValues="@array/fonts_values" 
+					android:id="@+id/List5"
+				/>
+					
+				<ListPreference 
+					android:title="Font size"
+					android:summary="Select from the list of sizes"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_bodyfontsize"
+					android:defaultValue="16" 
+					android:entries="@array/fontsizes"
+					android:entryValues="@array/fontsizes_values" 
+					android:id="@+id/List6"
+				/>
+		
+				<ListPreference 
+					android:title="Description font color"
+					android:summary="Select from the list of colors"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_bodyfontcolordesc"
+					android:defaultValue="white" 
+					android:entries="@array/fontcolors"
+					android:entryValues="@array/fontcolors_values" 
+					android:id="@+id/List7"
+				/>	
+		
+				<ListPreference 
+					android:title="Value font color "
+					android:summary="Select from the list of colors"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_bodyfontcolorvalue"
+					android:defaultValue="black" 
+					android:entries="@array/fontcolors"
+					android:entryValues="@array/fontcolors_values" 
+					android:id="@+id/List8"
+				/>	
+					
+			</PreferenceCategory>
+						
+			<PreferenceCategory android:title="Notification options">
+					
+				<ListPreference 
+					android:title="Font"
+					android:summary="Select from the list of installed fonts"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_notificationfont"
+					android:defaultValue="normal" 
+					android:entries="@array/fonts"
+					android:entryValues="@array/fonts_values" 
+					android:id="@+id/List9"
+				/>
+					
+				<ListPreference 
+					android:title="Font size"
+					android:summary="Select from the list of sizes"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_notificationfontsize"
+					android:defaultValue="14" 
+					android:entries="@array/fontsizes"
+					android:entryValues="@array/fontsizes_values" 
+					android:id="@+id/List10"
+				/>
+		
+				<ListPreference 
+					android:title="Font color"
+					android:summary="Select from the list of colors"
+					android:dependency="meteor_widget_main_option" 
+					android:key="meteor_widget_theme_notificationfontcolor"
+					android:defaultValue="white" 
+					android:entries="@array/fontcolors"
+					android:entryValues="@array/fontcolors_values" 
+					android:id="@+id/List11"
+				/>			
+					
+			</PreferenceCategory>
+		
+		</PreferenceScreen>	
+	
+		<CheckBoxPreference 
+			android:key="meteor_widget_main_option"
+			android:title="Update enabled" 
+			android:defaultValue="true"
+			android:summary="Enable the plugin updates" 
+			android:id="@+id/Check1"
+		/>
+	
+		<ListPreference 
+			android:title="Update interval"
+			android:summary="Select from a list of update intervals"
+			android:dependency="meteor_widget_main_option" 
+			android:key="meteor_widget_update_interval"
+			android:defaultValue="900" 
+			android:entries="@array/times"
+			android:entryValues="@array/times_values" 
+			android:id="@+id/List12"
+		/>
+			
+		<CheckBoxPreference 
+			android:key="meteor_widget_update_notifications"
+			android:title="Update notifications" 
+			android:defaultValue="true"
+			android:summary="Disable or enable the update notifications"
+			android:dependency="meteor_widget_main_option"
+			android:id="@+id/Check2"
+		/>
+
+		<CheckBoxPreference 
+			android:key="meteor_widget_error_notifications"
+			android:title="Error notifications" 
+			android:defaultValue="true"
+			android:summary="Disable or enable the error notifications"
+			android:dependency="meteor_widget_main_option"
+			android:id="@+id/Check3"
+		/>		
+
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="Advanced options" android:key="meteor_settings_advanced">
+			
+		<PreferenceScreen android:title="Google analytics" android:key="meteor_widget_advanced_analytics">
+
+			<PreferenceCategory android:title="Analytics settings">
+			
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_enabled"
+					android:title="Enable analytics" 
+					android:defaultValue="true"
+					android:summary="Enable or disable analytics"
+					android:dependency="meteor_widget_main_option" 
+					android:id="@+id/Check4"
+				/>
+				
+			</PreferenceCategory>
+			
+			<PreferenceCategory android:title="Personal information">
+			
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_notallowed"
+					android:title="About me" 
+					android:defaultValue="false"
+					android:summary="Phone numbers, or any other personal information that goes against analytics terms of service"
+					android:enabled="false"
+					android:id="@+id/Check5"
+				/>
+
+			</PreferenceCategory>
+			
+			<PreferenceCategory android:title="User interactions">
+			
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_plugin_onupdated"
+					android:title="Widget updates" 
+					android:defaultValue="true"
+					android:summary="Allows to to see if updates are being scheduled correctly"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check6"
+				/>
+					
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_plugin_onreceived"
+					android:title="Widget received" 
+					android:defaultValue="true"
+					android:summary="Allows to to see if intents are being received correctly"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check7"
+				/>
+				
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_plugin_onenabled"
+					android:title="Widget enabled" 
+					android:defaultValue="true"
+					android:summary="When the widget is added to your home screen"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check8"
+				/>
+					
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_plugin_ondisabled"
+					android:title="Widget disabled" 
+					android:defaultValue="true"
+					android:summary="When the widget is removed from your home screen"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check9"
+				/>
+					
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_plugin_preferences"
+					android:title="Widget preferences" 
+					android:defaultValue="true"
+					android:summary="How often you are accessing the preferences"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check10"
+				/>
+					
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_plugin_force_update"
+					android:title="Update now" 
+					android:defaultValue="true"
+					android:summary="See how often people are using force update"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check11"
+				/>
+					
+			</PreferenceCategory>
+			
+			<PreferenceCategory android:title="Widget preferences">
+			
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_theme_preferences"
+					android:title="Theme preferences" 
+					android:defaultValue="true"
+					android:summary="Tracking the theme preferences, lets me know what my users want"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check12"
+				/>
+			
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_update_interval"
+					android:title="Update interval" 
+					android:defaultValue="true"
+					android:summary="Tracking the update interval, lets me know what my users want"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check13"
+				/>
+				
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_notifications_status"
+					android:title="Update notifications" 
+					android:defaultValue="true"
+					android:summary="Update notifications enabled, lets me know what my users want"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check14"
+				/>
+					
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_notifications_error"
+					android:title="Error notifications" 
+					android:defaultValue="true"
+					android:summary="Error notifications enabled, lets me know what my users want"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check15"
+				/>
+					
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_plugin_disabled"
+					android:title="Plugin updates disabled" 
+					android:defaultValue="true"
+					android:summary="Plugin enabled, analytics won't send while the plugin is disabled, however it will once renabled"
+					android:dependency="meteor_widget_analytics_enabled"
+					android:id="@+id/Check16" 
+				/>
+					
+				<CheckBoxPreference 
+					android:key="meteor_widget_analytics_plugin_error"
+					android:title="Any errors of any kind" 
+					android:defaultValue="true"
+					android:summary="Tracking errors will help me improve this widget"
+					android:dependency="meteor_widget_analytics_enabled" 
+					android:id="@+id/Check17"
+				/>				
+					
+			</PreferenceCategory>
+
+		</PreferenceScreen>
+			
+	</PreferenceCategory>
+	
+</PreferenceScreen>

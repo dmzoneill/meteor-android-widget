@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:minWidth="180px" 
+	android:minHeight="120px"
+	android:updatePeriodMillis="36000000" 
+	android:initialLayout="@layout/meteorwidget_layout_orange"
+	android:configure="ie.MeteorWidget.MeteorActivity"	
+	>
+</appwidget-provider>

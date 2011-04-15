@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:paddingRight="10dp"
+  android:paddingLeft="10dp"
+  android:paddingBottom="72dp"
+>  
+
+	<LinearLayout 
+	  	xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    	android:layout_centerHorizontal="true"
+    	android:background="@drawable/blue_border"
+    	android:orientation="horizontal"
+    	android:padding="10dp"
+	>	
+		
+		<Button
+			android:id="@+id/saveButton"				
+			android:drawableLeft="@android:drawable/ic_menu_manage"
+			android:onClick="editPreferences" 	
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"  
+		/>		
+		
+		<Button
+			android:id="@+id/updateButton"	
+			android:drawableLeft="@android:drawable/ic_menu_rotate"			
+			android:onClick="forceUpdate" 	
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"	
+		/>	
+		
+		<Button
+			android:id="@+id/aboutButton"	
+			android:drawableLeft="@android:drawable/ic_menu_info_details"
+			android:onClick="showAbout" 			
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"	 
+		/>	
+		
+	</LinearLayout> 
+  
+</RelativeLayout>

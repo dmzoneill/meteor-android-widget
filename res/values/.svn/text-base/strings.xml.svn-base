@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="header">Bill Pay</string>
+    <string name="app_name">Meteor Bill Pay</string>
+    <string name="phone_default">08</string>
+    <string name="pin_default"></string>
+    <string name="About">
+<b>Hi!</b>\n
+Thanks for trying out this widget.\n\n
+<b>Dave.</b>\n\n
+dave@feeditout.com\n
+www.feeditout.com\n
+    </string>
+</resources>

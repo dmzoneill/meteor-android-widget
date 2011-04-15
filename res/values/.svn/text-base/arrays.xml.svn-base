@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+   
+    <string-array name="times">
+    	<item>1 minute ( testing )</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+    </string-array>
+    
+    <string-array name="times_values">
+    	<item>60</item>
+        <item>900</item>
+        <item>1800</item>
+        <item>3600</item>
+        <item>10800</item>
+        <item>21600</item>
+        <item>43200</item>
+    </string-array>    
+    
+    <string-array name="colors">
+        <item>Blue</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>Orange</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Red</item>
+        <item>Yellow</item>
+    </string-array>
+    
+    <string-array name="colors_values">
+        <item>blue</item>
+        <item>cyan</item>
+        <item>green</item>
+        <item>orange</item>
+        <item>pink</item>
+        <item>purple</item>
+        <item>red</item>
+        <item>yellow</item>
+    </string-array>
+    
+    <string-array name="fontcolors">
+        <item>Blue</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>Orange</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>White</item>
+        <item>Black</item>
+    </string-array>
+    
+    <string-array name="fontcolors_values">
+        <item>blue</item>
+        <item>cyan</item>
+        <item>green</item>
+        <item>orange</item>
+        <item>pink</item>
+        <item>purple</item>
+        <item>red</item>
+        <item>yellow</item>
+        <item>white</item>
+        <item>black</item>
+    </string-array>
+    
+    
+    <string-array name="fonts">
+        <item>Droid Sans</item>
+        <item>Droid Serif</item>
+        <item>Droid Sans Mono</item>
+    </string-array>
+    
+    <string-array name="fonts_values">
+        <item>normal</item>
+        <item>serif</item>
+        <item>monospace</item>
+    </string-array>
+    
+    <string-array name="fontsizes">
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Big</item>
+        <item>Huge</item>
+        <item>Massive</item>
+    </string-array>
+    
+    <string-array name="fontsizes_values">
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+    </string-array>
+    
+    
+</resources>
