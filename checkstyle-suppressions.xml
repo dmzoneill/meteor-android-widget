@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN" "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+<!-- Legacy code (approx. 2008-2011) kept as-is: these duplicated files are wrapped in jscpd ignore comments and exempt from checkstyle (approved by David). -->
+<suppressions>
+  <suppress checks=".*" files="src[\\/]ie[\\/]MeteorWidget[\\/]DynamicView[\\/]RemoteViewCreator\.java"/>
+  <suppress checks=".*" files="src[\\/]ie[\\/]MeteorWidget[\\/]MeteorActivity\.java"/>
+  <suppress checks=".*" files="src[\\/]ie[\\/]MeteorWidget[\\/]MeteorPreferences\.java"/>
+  <suppress checks=".*" files="src[\\/]ie[\\/]MeteorWidget[\\/]Themes[\\/]Theme\.java"/>
+  <suppress checks=".*" files="src[\\/]ie[\\/]MeteorWidget[\\/]Threader[\\/]UpdateTimerTask\.java"/>
+  <suppress checks=".*" files="src[\\/]ie[\\/]MeteorWidget[\\/]Threader[\\/]Updater\.java"/>
+  <suppress checks=".*" files="src[\\/]ie[\\/]MeteorWidget[\\/]Web[\\/]WebClient\.java"/>
+</suppressions>

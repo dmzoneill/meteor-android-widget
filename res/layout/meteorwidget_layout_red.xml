@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<!-- jscpd:ignore-start -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/configureButton" android:layout_width="fill_parent" android:layout_height="fill_parent">
     <ImageView android:id="@+id/backgroundImage" android:src="@drawable/bg_red" style="@style/MeteorLayoutImageView4"/>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/MeteorLayoutRelativeLayout5">
@@ -29,3 +30,4 @@
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>
+<!-- jscpd:ignore-end -->

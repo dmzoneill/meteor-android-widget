@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<!-- jscpd:ignore-start -->
 <resources>
     <style name="MeteorLayoutTextView1">
         <item name="android:gravity">right</item>
@@ -126,3 +127,4 @@
         <item name="android:textStyle">bold</item>
     </style>
 </resources>
+<!-- jscpd:ignore-end -->
