@@ -33,7 +33,8 @@ public class MeteorPreferences extends PreferenceActivity
     this.track("MeteorPreferences");
 
     if (MeteorWidgetProvider.getInstance() == null) {
-      this.notification("Remeber to place the widget\non your home screen", 0); // codespell:ignore remeber
+      this.notification(
+          "Remeber to place the widget\non your home screen", 0); // codespell:ignore remeber
     }
   }
 
@@ -326,7 +327,8 @@ public class MeteorPreferences extends PreferenceActivity
   @Override
   public void onBackPressed() {
     if (MeteorWidgetProvider.getInstance() == null) {
-      this.notification("Remeber to place the widget\non your home screen", 0); // codespell:ignore remeber
+      this.notification(
+          "Remeber to place the widget\non your home screen", 0); // codespell:ignore remeber
     }
     this.finish();
   }
