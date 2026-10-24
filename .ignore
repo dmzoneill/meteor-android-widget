@@ -1,0 +1,6 @@
+# Generated: Subversion working-copy metadata (.svn pristine copies), committed by accident.
+**/.svn/
+# Generated: Android/Eclipse ADT build output.
+bin/
+# Generated: Android aapt resource IDs (R.java).
+gen/
