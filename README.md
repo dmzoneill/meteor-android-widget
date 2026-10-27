@@ -6,7 +6,7 @@ texts.
 
 ## What it does
 
-- Logs in to the My Meteor website and reads the account balance and
+- Logs in to the My Meteor site and reads the account balance and
   usage.
 - Shows the figures on a home screen widget, refreshed on a timer.
 - Lets you change settings and themes, and can show notifications.
