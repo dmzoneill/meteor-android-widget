@@ -1,5 +1,9 @@
 # Meteor Android Widget
 
+<p align="center">
+  <img src=".github/logo.png" alt="meteor-android-widget logo" width="128" />
+</p>
+
 An Android home screen widget for customers of Meteor, the Irish mobile
 network. It shows account usage such as remaining credit, minutes and
 texts.
