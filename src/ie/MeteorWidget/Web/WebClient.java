@@ -265,7 +265,8 @@ public class WebClient implements Observable {
   private void readUsageInformation() {
     Pattern row =
         Pattern.compile(
-            "<tr[^>]*>(.*?)</tr>", Pattern.MULTILINE | Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
+            "<tr[^>]*+>((?:[^<]++|<(?!/tr>))*+)</tr>",
+            Pattern.MULTILINE | Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
     Matcher rowmatch = row.matcher(this.result);
     while (rowmatch.find()) {
       // data
@@ -302,7 +303,7 @@ public class WebClient implements Observable {
   private void readWebTextUsageInformation() {
     Pattern row =
         Pattern.compile(
-            "(<input type=\"text\" id=\"numfreesmstext\" value=\").*(\" disabled size=2>)",
+            "(<input type=\"text\" id=\"numfreesmstext\" value=\")[^\"]*(\" disabled size=2>)",
             Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
     Matcher rowmatch = row.matcher(this.result);
     while (rowmatch.find()) {
